@@ -1,0 +1,13 @@
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore training-related files (unless needed)
+training/
+
+# Ignore large dataset files
+*.csv
+*.png
+
+# Ignore unnecessary logs or temp files
+debug_input_fl
+

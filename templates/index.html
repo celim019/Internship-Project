@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Digit Recognition</h1>
+        
+        <form id="uploadForm">
+            <label for="imageInput">📂 Choose an Image</label>
+            <input type="file" id="imageInput" accept="image/*">
+            <button type="submit">🚀 Predict</button>
+        </form>
+
+        <p id="result">Prediction will appear here...</p>
+        <img id="preview">
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Apply a nice gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+}
+
+/* Center everything inside a card */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the header */
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Style the file input */
+input[type="file"] {
+    display: none;
+}
+
+label {
+    background: #ffffff;
+    color: #6e8efb;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Add hover effect to file upload button */
+label:hover {
+    background: #e0e0e0;
+}
+
+/* Style the button */
+button {
+    background: #ff4081;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #d81b60;
+}
+
+/* Style the prediction result */
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Preview image styling */
+#preview {
+    display: none;
+    max-width: 200px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
