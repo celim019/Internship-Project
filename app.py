@@ -12,16 +12,16 @@ model = load_model("emnist_digit_model.h5")
 
 
 def preprocess_image(image_path):
-    img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)  # Load in grayscale
+    img = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)  
     if img is None:
         return None
 
-    img = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)  # Fix EMNIST rotation
-    img = cv2.resize(img, (28, 28))  # Resize to match EMNIST format
+    img = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)  
+    img = cv2.resize(img, (28, 28))  
 
-    img = img.astype("float32") / 255.0  # Normalize to [0,1]
-    img = np.expand_dims(img, axis=0)  # Add batch dimension
-    img = np.expand_dims(img, axis=-1)  # Add channel dimension (28,28,1)
+    img = img.astype("float32") / 255.0  
+    img = np.expand_dims(img, axis=0)  
+    img = np.expand_dims(img, axis=-1)  
 
     return img
 
